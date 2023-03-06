@@ -4,6 +4,9 @@
 
 ### Author: Amani M AL-Zoubi
 
+### description
+- The goal of this API is so that the user can communicate with the database and view/add/update/delete records of the COVID-19 statistics retrieved from the user. 
+
 ### Links and Resources
 
 - [Django REST framework](https://www.django-rest-framework.org/)
@@ -12,9 +15,14 @@
 
 - use python version 3.10.7
 
-### description
-- The goal of this API is so that the user can communicate with the database and view/add/update/delete records of the COVID-19 statistics retrieved from the user. 
+#### `.env` requirements 
+- create a .env file inside the Covid19 folder and copy everything in `.env.sample` inside it 
 
+#### How to initialize/run your application (where applicable)
+- I used docker , so you need to run it from docker container
+    `docker-compose up` to run it from your machine 
+- Use `http://127.0.0.1:<PORT>/api/v1/records/` to get records API 
+- for specific Game add it's id to your path like `http://127.0.0.1:<PORT>/api/v1/records/1`
 
 ### Authentication and Permission for models
 
